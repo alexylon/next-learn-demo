@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MyLayout'
 
 const Page = () => {
   const router = useRouter()

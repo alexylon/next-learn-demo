@@ -1,16 +1,14 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import Layout from '../components/MyLayout.js'
+import Layout from '../../components/MyLayout'
 
-const Page = () => {
+export default function Post() {
   const router = useRouter()
 
   return (
     <Layout>
-      <h1>{router.query.title}</h1>
+      <h1>{router.query.id}</h1>
       <p>This is the blog post content.</p>
     </Layout>
   )
 }
-
-export default Page
